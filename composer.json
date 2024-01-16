@@ -1,0 +1,65 @@
+{
+  "name": "cslant/lark-git-notifier",
+  "description": "Send notification from Gitlab and Github events to Lark",
+  "keywords": [
+    "cslant",
+    "lark",
+    "lark-notify",
+    "git-webhook",
+    "lark-notifier",
+    "lark-notify",
+    "github-notifier",
+    "gitlab-notifier",
+    "github-lark-bot",
+    "gitlab-lark-bot",
+    "github-lark-notify",
+    "gitlab-lark-notify"
+  ],
+  "homepage": "https://github.com/cslant/lark-git-notifier",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tan Nguyen",
+      "email": "tannp27@gmail.com",
+      "homepage": "https://tanhongit.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CSlant\\LarkGitNotifier\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CSlant\\LarkGitNotifier\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.8",
+    "symfony/http-foundation": "^6.3",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^v3.37.1",
+    "pestphp/pest": "^2.24",
+    "phpstan/phpstan": "^1.10.39"
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan",
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+    "test": "vendor/bin/pest"
+  },
+  "support": {
+    "issues": "https://github.com/cslant/lark-git-notifier/issues"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
